@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddLocationActivity">
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/add_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+    <LinearLayout
+        android:id="@+id/ll_sp"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_map">
+        <Spinner
+            android:id="@+id/sp_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+    <Button
+        android:id="@+id/add_location"
+        android:layout_below="@+id/ll_sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Location"/>
+    <Button
+        android:id="@+id/mark_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mark Me"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

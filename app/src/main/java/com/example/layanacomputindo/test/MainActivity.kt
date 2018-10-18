@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(Intent(this@MainActivity, CurrentLocationActivity::class.java))
             }
             R.id.button2 -> {
-
+                startActivity(Intent(this@MainActivity, AddLocationActivity::class.java))
             }
         }
     }
